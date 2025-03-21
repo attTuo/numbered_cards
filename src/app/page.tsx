@@ -1,7 +1,10 @@
+import ThemeSwitch from "@/components/ThemeSwitch";
+
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen">
-      <h1 className="text-4xl">Start</h1>
+      <ThemeSwitch />
+      <h1 className="text-4xl text-primary-text">Start</h1>
       <p>Hello</p>
     </div>
   );
