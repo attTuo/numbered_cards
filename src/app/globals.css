@@ -20,6 +20,24 @@
   --primary-background: #212529;
 }
 
+button {
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+li {
+  text-align: center;
+  padding: 4px;
+}
+li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
 body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
