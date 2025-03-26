@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -29,7 +31,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
+          <header className="flex justify-center">
+            <Navbar />
+          </header>
           {children}
+          <footer className="flex justify-center">
+            <Footer />
+          </footer>
+
         </ThemeProvider>
       </body>
     </html>
