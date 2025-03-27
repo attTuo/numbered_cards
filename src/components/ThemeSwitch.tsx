@@ -25,12 +25,12 @@ export default function ThemeSwitch() {
 
     <div 
       className="flex flex-row-reverse justify-start"
-      onBlur={() => {setShowDropdown(false)}}
+      onBlur={() => setShowDropdown(false)}
     >
       <button 
         className="bg-blue-400 text-primary-text flex w-24 justify-between"
         onClick={() => setShowDropdown(!showDropdown)}
-        role="button"
+        type="button"
       >
         <p>Theme</p>
         <span className={`${showDropdown && "rotate-180"} rotate-0`}>v</span>
